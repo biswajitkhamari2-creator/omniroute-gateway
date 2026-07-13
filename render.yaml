@@ -2,6 +2,6 @@ services:
   - type: web
     name: omniroute-gateway
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && npm run build
     startCommand: node run-standalone.mjs
     plan: free
